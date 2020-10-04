@@ -10,6 +10,8 @@ OBJ = nfc-daemon.o utils.o logger.o runner.o
 nfc-daemon: $(OBJ)
 	$(CC) $(LIBS) -o $@ $^ $(CFLAGS)
 
+.PHONY: clean
+
 clean: nfc-daemon
 	rm *.o
 	rm nfc-daemon
