@@ -21,7 +21,7 @@ make
 
 Install:
 ```
-make install
+sudo make install
 ```
 
 # Configuration
@@ -66,5 +66,5 @@ Goodbye World
 
 # Uninstall
 ```
-make uninstall
+sudo make uninstall
 ```
