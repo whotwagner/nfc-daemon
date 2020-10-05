@@ -25,6 +25,15 @@ Install:
 sudo make install
 ```
 
+As a systemd-service:
+```
+# BEFORE: edit docs/nfc-daemon.service and change User to your needs
+sudo cp docs/nfc-daemon.service /etc/systemd/system/nfc-daemon.service
+sudo systemctl enable nfc-daemon.service
+sudo systemctl start nfc-daemon.service
+```
+
+
 # Configuration
 
 nfc-daemon can be executed with the following parameters:
