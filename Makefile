@@ -1,5 +1,7 @@
 SUBDIRS = src
 export PREFIX = /usr/local
+export RUNSCRIPT = run_script
+export ENDSCRIPT = end_script
 
 .PHONY: subdirs $(SUBDIRS)
 .PHONY: all install uninstall
