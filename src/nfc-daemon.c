@@ -65,8 +65,20 @@ static nfc_context *context;
 /* define the loglevel */
 enum log_levels loglevel = error;
 
+#ifdef _RUNSCRIPT
+char runscript[] = _RUNSCRIPT;
+#endif
+#ifndef _RUNSCRIPT
 char runscript[] = "/usr/local/share/nfc-daemon/scripts/run_script";
+#endif
+
+#ifdef _ENDSCRIPT
+char endscript[] = _ENDSCRIPT;
+#endif
+#ifndef _ENDSCRIPT
 char endscript[] = "/usr/local/share/nfc-daemon/scripts/end_script";
+#endif
+
 
 static void stop_polling(int sig)
 {
