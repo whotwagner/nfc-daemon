@@ -9,7 +9,7 @@ SCRIPTMACRO = -D _RUNSCRIPT="\"$(PREFIX)/share/nfc-daemon/$(RUNSCRIPT)\"" -D _EN
 	$(CC) -c $(SCRIPTMACRO) -o $@ $< $(CFLAGS)
 
 nfc-daemon: $(OBJ)
-	$(CC) $(LIBS) -o $@ $^ $(CFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 .PHONY: clean install uninstall
 

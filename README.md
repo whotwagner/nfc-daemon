@@ -4,7 +4,7 @@ It is based on nfc-poll.c from libnfc.
 
 # Dependencies
 
-* libnfc 1.7.1
+* libnfc 1.8.0
 * properly configured nfc-device
 
 On Raspberry Pi OS:

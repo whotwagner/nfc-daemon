@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
 			break;
 		case 'l':
 			errno = 0;
-			int val = strtol(optarg,&endptr,10);
+			long val = strtol(optarg,&endptr,10);
 			if ((errno == ERANGE && (val == LONG_MAX || val == LONG_MIN))
 				|| (errno != 0 && val == 0)) {
 				fprintf(stderr,"invalid loglevel: %s\n",strerror(errno));

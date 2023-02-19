@@ -50,6 +50,9 @@ void snprint_UID(char *dst, size_t size, const nfc_target *pnt)
       case NMT_DEP:
 	log_warn("Unsupported RFID-Tag");
         break;
+      default:
+	log_warn("Unsupported RFID-Tag");
+	break;
     }
   }
 }
