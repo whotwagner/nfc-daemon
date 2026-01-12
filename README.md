@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository has been moved to [https://codeberg.org/whotwagner/nfc-daemon](https://codeberg.org/whotwagner/nfc-daemon). Please visit the new location for the latest updates.
+
 # nfc-daemon
 nfc-daemon is a very simple event daemon that reads out the UID of nfc-tags and executes scripts.
 It is based on nfc-poll.c from libnfc.
